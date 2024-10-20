@@ -18,7 +18,7 @@ jobs:
         run: yarn
 
       - name: Instalando Playwright
-        run: yarn playright install
+        run: yarn playwright install
 
       - name: ITeste E2E
         run: yarn run e2e
