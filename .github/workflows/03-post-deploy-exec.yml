@@ -3,9 +3,10 @@
 name: 'Execucao por Deploy'
 
 on:
-  workflow_run: ['Execucao Manual']
-  types:
-    - completed
+  workflow_run: 
+    workflows: ['Execucao Manual']
+    types:
+      - completed
 
 jobs:
   e2e-tests:
