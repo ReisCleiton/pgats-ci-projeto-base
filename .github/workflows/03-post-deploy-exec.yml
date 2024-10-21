@@ -1,10 +1,11 @@
-# CI de Nivel 02 - Disparo agendado
+# CI de Nivel 03 - Disparo sempre que deply executado
 
-name: 'Execucao Agendada'
+name: 'Execucao por Deply'
 
 on:
-  schedule:
-    - cron: '21 15 * * 0'
+  workflow_run: ['Execucao Manual']
+  types:
+    - completed
 
 jobs:
   e2e-tests:
