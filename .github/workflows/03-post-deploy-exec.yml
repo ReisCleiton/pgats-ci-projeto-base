@@ -1,6 +1,6 @@
 # CI de Nivel 03 - Disparo sempre que deply executado
 
-name: 'Execucao por Deply'
+name: 'Execucao por Deploy'
 
 on:
   workflow_run: ['Execucao Manual']
